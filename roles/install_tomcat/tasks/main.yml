@@ -9,7 +9,7 @@
   file:
     path: "{{ ansible_tomcat_dir }}"
     state: directory
-    mode: 0644
+    mode: 0775
 
 - name: copy static index.html to tomcat webapps/ansible/index.html
   template:
