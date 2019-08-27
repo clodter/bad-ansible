@@ -1,0 +1,11 @@
+---
+# tasks file for install_postgres
+- name: install postgres
+  yum:
+    name: "{{ packages }}"
+    state: latest
+  notify:
+    - initialize postgres
+    - initialize postgres additional
+    - start postgres
+...

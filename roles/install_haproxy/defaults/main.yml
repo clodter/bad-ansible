@@ -1,0 +1,6 @@
+---
+# defaults file for install_haproxy
+packages:
+  - httpie
+  - haproxy
+...

@@ -1,0 +1,18 @@
+---
+# handlers file for install_postgres
+- name: initialize postgres
+  command: postgresql-setup initdb
+  args:
+    creates: /var/lib/pgsql/data/postgres
+
+- name: initialize postgres additional
+  command: chkconfig postgresql on
+  args:
+    creates: /var/lib/pgsql/data/postgres
+
+- name: start postgres
+  service:
+    name: postgresql
+    state: started
+    enabled: yes
+...

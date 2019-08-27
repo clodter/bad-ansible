@@ -1,0 +1,7 @@
+---
+# defaults file for install_tomcat
+packages:
+  - tomcat
+
+ansible_tomcat_dir: /usr/share/tomcat/webapps/ROOT
+...
