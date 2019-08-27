@@ -3,6 +3,4 @@
 packages:
   - httpie
   - haproxy
-
-GUID=fddb
 ...
