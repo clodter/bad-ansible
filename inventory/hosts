@@ -8,3 +8,6 @@ app2.fddb.internal ansible_ssh_host=app2.fddb.example.opentlc.com
 [appdbs]
 appdb1.fddb.internal ansible_ssh_host=appdb1.fddb.example.opentlc.com
 
+[all:vars]
+GUID='fddb'
+
