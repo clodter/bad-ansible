@@ -11,6 +11,7 @@
 
 - hosts: apps
   gather_facts: no
+  become: yes
   roles:
     - install_tomcat
 
