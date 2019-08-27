@@ -10,7 +10,7 @@
     path: "{{ ansible_tomcat_dir }}"
     state: directory
     mode: 0775
-    owner: tomcat
+    owner: root
     group: tomcat
 
 - name: copy static index.html to tomcat webapps/ansible/index.html
@@ -18,7 +18,7 @@
     src: index.html.j2
     dest: "{{ ansible_tomcat_dir }}/index.html"
     mode: 0644
-    owner: tomcat
+    owner: root
     group: tomcat
   notify: enable and start tomcat
 ...
