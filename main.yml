@@ -17,6 +17,7 @@
 
 - hosts: apps
   gather_facts: no
+  become: yes
   roles:
     - deploy_app
 
