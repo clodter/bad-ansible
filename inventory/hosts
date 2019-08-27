@@ -1,0 +1,10 @@
+[frontends]
+frontend1.fddb.internal ansible_ssh_host=frontend1.fddb.example.opentlc.com
+
+[apps]
+app1.fddb.internal ansible_ssh_host=app1.fddb.example.opentlc.com
+app2.fddb.internal ansible_ssh_host=app2.fddb.example.opentlc.com
+
+[appdbs]
+appdb1.fddb.internal ansible_ssh_host=appdb1.fddb.example.opentlc.com
+
